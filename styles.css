@@ -76,25 +76,41 @@ a[href="index.html"] {
 }
 @media (max-width: 768px) {
   .menu-toggle {
-    display: flex; /* Show hamburger button on mobile */
+    display: flex;
     margin-bottom: 12px;
   }
 
   .nav-links {
-    display: none; /* Hide navigation links by default */
+    display: none;
     flex-direction: column;
-    gap: 8px; /* Adds clean spacing between each menu item */
+    gap: 8px; 
     width: 100%;
   }
   .nav-links a {
     display: block;
-    width: 100%; /* Makes all menu buttons uniform in width */
+    width: 100%;
     text-align: left;
-    padding: 10px 14px; /* Adds comfortable breathing room inside the buttons */
+    padding: 10px 14px; 
   }
-
-  /* Class added via JavaScript when toggled open */
   .nav-links.active {
     display: flex;
+  }
+  .menu-toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  .menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .menu-toggle.active .bar:nth-child(2) {
+    opacity: 0; 
+  }
+
+  .menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
   }
 }
