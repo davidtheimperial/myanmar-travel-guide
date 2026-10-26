@@ -56,3 +56,45 @@ a[href="index.html"] {
     }
     transition: background-color 0.2s ease;
 }
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.menu-toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #8c4510;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* Show hamburger button on mobile */
+    margin-bottom: 12px;
+  }
+
+  .nav-links {
+    display: none; /* Hide navigation links by default */
+    flex-direction: column;
+    gap: 8px; /* Adds clean spacing between each menu item */
+    width: 100%;
+  }
+  .nav-links a {
+    display: block;
+    width: 100%; /* Makes all menu buttons uniform in width */
+    text-align: left;
+    padding: 10px 14px; /* Adds comfortable breathing room inside the buttons */
+  }
+
+  /* Class added via JavaScript when toggled open */
+  .nav-links.active {
+    display: flex;
+  }
+}
