@@ -42,20 +42,6 @@ footer {
     margin-top: 40px;
     font-size: 0.9em;
 }
-a[href="index.html"] {
-    margin-bottom: 20px;
-    display: inline-block;
-    background-color: #8c4510;
-    color: #fff;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: 500;
-    &:hover {
-        background-color: #a0522d;
-    }
-    transition: background-color 0.2s ease;
-}
 .menu-toggle {
     display: none;
     flex-direction: column;
