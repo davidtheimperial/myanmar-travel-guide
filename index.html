@@ -2,53 +2,228 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<script>document.documentElement.classList.add('js');</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Learn about Myanmar, its culture, history, and attractions.">
-	<link rel="stylesheet" href="styles.css">
+	<title>Myanmar Travel Guide — culture, history and places to know</title>
+	<meta name="description" content="An independent, plain-language guide to Myanmar: its peoples and festivals, its history from the Pyu city-states to today, and the landmarks travellers ask about most.">
+	<link rel="canonical" href="https://davidtheimperial.github.io/myanmar-travel-guide/">
+	<meta name="theme-color" content="#fbf6ee" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="#141110" media="(prefers-color-scheme: dark)">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Myanmar Travel Guide">
+	<meta property="og:title" content="Myanmar Travel Guide">
+	<meta property="og:description" content="An independent guide to Myanmar's culture, history and attractions — with a clear safety advisory.">
+	<meta property="og:url" content="https://davidtheimperial.github.io/myanmar-travel-guide/">
 	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+	<link rel="stylesheet" href="styles.css">
 	<script src="app.js" defer></script>
-	<title>About Myanmar</title>	
 </head>
 <body>
-	<header>
-		<h1>Welcome to Myanmar</h1>
-		<button class="menu-toggle" aria-label="Toggle navigation" aria-controls="site-navigation" aria-expanded="false">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </button>
-		<nav id="site-navigation">
-			<ul class="nav-links">
-				<li><a href="culture.html">Culture</a></li>
-				<li><a href="history.html">History</a></li>
-				<li><a href="attractions.html">Attractions</a></li>
-				<li><a href="disclaimer.html">Civil War Disclaimer</a></li>
-			</ul>
-		</nav>
+	<a class="skip-link" href="#main">Skip to content</a>
+
+	<header class="site-header">
+		<div class="wrap header-inner">
+			<a class="brand" href="index.html">
+				<span class="brand-mark" aria-hidden="true">M</span>
+				<span class="brand-text">Myanmar <em>Travel Guide</em></span>
+			</a>
+
+			<button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="site-nav" aria-expanded="false">
+				<span></span><span></span><span></span>
+			</button>
+
+			<nav class="site-nav" id="site-nav" aria-label="Main">
+				<ul>
+					<li><a href="index.html" aria-current="page">Home</a></li>
+					<li><a href="culture.html">Culture</a></li>
+					<li><a href="history.html">History</a></li>
+					<li><a href="attractions.html">Attractions</a></li>
+					<li><a href="disclaimer.html">Travel advisory</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
-	<main>
-		<section id="culture">
-			<h2>Culture</h2>
-			<p>Myanmar has a rich cultural heritage, influenced by Buddhism and traditional practices. Festivals, music, and dance are integral parts of daily life.</p>
+	<main id="main">
+		<section class="hero">
+			<svg class="hero-art" viewBox="0 0 600 260" aria-hidden="true" focusable="false">
+				<g fill="currentColor">
+					<rect x="75" y="238" width="60" height="22" rx="2"/>
+					<rect x="82" y="224" width="46" height="14" rx="2"/>
+					<path d="M88 224c0-38 7-52 17-52s17 14 17 52z"/>
+					<rect x="101" y="160" width="8" height="12"/>
+					<path d="M102 160 105 108l3 52z"/>
+					<circle cx="105" cy="104" r="3.5"/>
+
+					<rect x="250" y="224" width="100" height="36" rx="3"/>
+					<rect x="260" y="206" width="80" height="18" rx="2"/>
+					<path d="M266 206c0-60 14-78 34-78s34 18 34 78z"/>
+					<rect x="295" y="110" width="10" height="18"/>
+					<path d="M296 110 300 44l4 66z"/>
+					<circle cx="300" cy="40" r="4.5"/>
+
+					<rect x="430" y="234" width="80" height="26" rx="2"/>
+					<rect x="438" y="222" width="64" height="12" rx="2"/>
+					<path d="M443 222c0-46 11-62 27-62s27 16 27 62z"/>
+					<rect x="466" y="148" width="8" height="12"/>
+					<path d="M467 148 470 100l3 48z"/>
+					<circle cx="470" cy="96" r="3.5"/>
+				</g>
+			</svg>
+
+			<div class="wrap hero-inner">
+				<p class="eyebrow eyebrow--light">An independent guide</p>
+				<h1>Myanmar: culture, history and places to know</h1>
+				<p class="hero-lede">A plain-language introduction to the country — its peoples and festivals, the long sweep of its history, and the landmarks travellers ask about most. Written for readers, not for bookings.</p>
+				<div class="hero-actions">
+					<a class="btn btn-primary" href="attractions.html">Explore attractions</a>
+					<a class="btn btn-ghost" href="culture.html">Start with the culture</a>
+				</div>
+				<p class="hero-note">
+					<span aria-hidden="true">&#9888;</span>
+					<span>Myanmar is in the middle of an armed conflict. Read the <a href="disclaimer.html">travel advisory</a> before planning any trip.</span>
+				</p>
+			</div>
 		</section>
 
-		<section id="history">
-			<h2>History</h2>
-			<p>The history of Myanmar dates back thousands of years, with influences from various dynasties and colonial periods. It has a complex history that has shaped its present-day society.</p>
+		<section class="section" aria-labelledby="start-here">
+			<div class="wrap">
+				<div class="section-head">
+					<p class="eyebrow">Start here</p>
+					<h2 id="start-here">Three ways into the country</h2>
+					<p class="lede">Each section stands on its own, so you can read straight through or jump to what you need.</p>
+				</div>
+
+				<div class="card-grid">
+					<a class="card" href="culture.html">
+						<span class="card-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.3-7-9.5A7 7 0 0 1 12 4a7 7 0 0 1 7 7.5C19 16.7 12 21 12 21z"/><circle cx="12" cy="11" r="2.5"/></svg>
+						</span>
+						<h3>Culture</h3>
+						<p>Dozens of ethnic groups, a calendar of festivals, a table built on tea and rice, and the longyi that everyone wears.</p>
+						<span class="card-more">Read about culture <span aria-hidden="true">&rarr;</span></span>
+					</a>
+
+					<a class="card" href="history.html">
+						<span class="card-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+						</span>
+						<h3>History</h3>
+						<p>From the Pyu city-states and the Pagan Empire through colonial rule and independence to the 2021 coup.</p>
+						<span class="card-more">Follow the timeline <span aria-hidden="true">&rarr;</span></span>
+					</a>
+
+					<a class="card" href="attractions.html">
+						<span class="card-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18M6 20V9l6-5 6 5v11"/><path d="M10 20v-5h4v5"/></svg>
+						</span>
+						<h3>Attractions</h3>
+						<p>Bagan's temple plain, Inle Lake's floating gardens, the Shwedagon Pagoda, Mandalay and the coast.</p>
+						<span class="card-more">See the places <span aria-hidden="true">&rarr;</span></span>
+					</a>
+				</div>
+			</div>
 		</section>
 
-		<section id="attractions">
-			<h2>Attractions</h2>
-			<p>Myanmar is home to stunning landscapes, ancient temples, and vibrant cities. Popular attractions include Bagan, Inle Lake, and the Shwedagon Pagoda.</p>
+		<section class="section section--tint" aria-labelledby="glance">
+			<div class="wrap">
+				<div class="section-head">
+					<p class="eyebrow">At a glance</p>
+					<h2 id="glance">The facts, quickly</h2>
+				</div>
+
+				<dl class="facts">
+					<div class="fact"><dt>Capital</dt><dd>Naypyidaw</dd></div>
+					<div class="fact"><dt>Largest city</dt><dd>Yangon</dd></div>
+					<div class="fact"><dt>Official language</dt><dd>Burmese</dd></div>
+					<div class="fact"><dt>Currency</dt><dd>Kyat (MMK)</dd></div>
+					<div class="fact"><dt>Area</dt><dd>676,578 km&sup2;</dd></div>
+					<div class="fact"><dt>Population</dt><dd>&asymp; 54 million</dd></div>
+					<div class="fact"><dt>Independence</dt><dd>4 January 1948</dd></div>
+					<div class="fact"><dt>Time zone</dt><dd>UTC+6:30</dd></div>
+				</dl>
+
+				<p class="note">Figures are rounded. Population estimates vary widely because the most recent national census (2014) predates a decade of conflict and displacement.</p>
+			</div>
+		</section>
+
+		<section class="section" aria-labelledby="before">
+			<div class="wrap">
+				<div class="section-head">
+					<p class="eyebrow">Practical</p>
+					<h2 id="before">Before you go</h2>
+				</div>
+
+				<div class="card-grid">
+					<article class="panel">
+						<h3>When to go</h3>
+						<p><strong>November to February</strong> is the cool, dry season and the easiest time to travel. March to May is hot; June to October brings the monsoon.</p>
+					</article>
+					<article class="panel">
+						<h3>Check safety first</h3>
+						<p>Foreign-office advice changes often, and some regions are closed to visitors entirely. Check your own government's advisory and your embassy before booking anything.</p>
+					</article>
+					<article class="panel">
+						<h3>Etiquette</h3>
+						<p>Shoes and socks come off at pagodas. Cover shoulders and knees. Ask before photographing people or monks, and never point your feet at a Buddha image.</p>
+					</article>
+				</div>
+
+				<div class="callout callout--warn">
+					<p class="callout-title">A note on this guide</p>
+					<p>This site is a student-made educational project. It is not a booking service and cannot vouch for current conditions on the ground. For anything time-sensitive, use the official sources linked in the <a href="disclaimer.html">travel advisory</a>.</p>
+				</div>
+			</div>
 		</section>
 	</main>
-	<footer>
-		<p>&copy; 2024 Myanmar Travel Guide. All rights reserved.</p>
-		<p>Disclaimer: The information provided on this website is for general informational purposes only. Please refer to the <a href="disclaimer.html">Civil War Disclaimer</a> for important safety information.</p>
-		<p>For more information about Myanmar, visit the <a href="https://en.wikipedia.org/wiki/Myanmar" target="_blank">Wikipedia</a>.</p>
-		<p>For more information about the ongoing civil war in Myanmar, please refer to reputable news sources, international organizations, and official government advisories.</p>
-		<p>By using this website, you acknowledge and agree to the above disclaimer. We encourage you to seek additional information from reliable sources and exercise caution when interpreting the content provided here.</p>
-		<p>Website by <a href="https://github.com/davidtheimperial" target="_blank">David Gaius</a></p>
+
+	<footer class="site-footer">
+		<div class="wrap">
+			<div class="footer-grid">
+				<div>
+					<a class="brand" href="index.html">
+						<span class="brand-mark" aria-hidden="true">M</span>
+						<span class="brand-text">Myanmar <em>Travel Guide</em></span>
+					</a>
+					<p class="footer-blurb">A small, independent guide to Myanmar's culture, history and landmarks.</p>
+				</div>
+
+				<nav aria-label="Footer">
+					<h2 class="footer-heading">Explore</h2>
+					<ul class="footer-links">
+						<li><a href="culture.html">Culture</a></li>
+						<li><a href="history.html">History</a></li>
+						<li><a href="attractions.html">Attractions</a></li>
+						<li><a href="disclaimer.html">Travel advisory</a></li>
+					</ul>
+				</nav>
+
+				<div>
+					<h2 class="footer-heading">Sources</h2>
+					<ul class="footer-links">
+						<li><a href="https://en.wikipedia.org/wiki/Myanmar" target="_blank" rel="noopener noreferrer">Wikipedia: Myanmar</a></li>
+						<li><a href="https://www.unocha.org/myanmar" target="_blank" rel="noopener noreferrer">UN OCHA Myanmar</a></li>
+						<li><a href="https://www.gov.uk/foreign-travel-advice/myanmar" target="_blank" rel="noopener noreferrer">UK travel advice</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-legal">
+				<p>&copy; <span data-year>2026</span> Myanmar Travel Guide. Written by <a href="https://github.com/davidtheimperial" target="_blank" rel="noopener noreferrer">David Gaius</a>.</p>
+				<p>Informational only &mdash; see the <a href="disclaimer.html">travel advisory</a>.</p>
+			</div>
+		</div>
 	</footer>
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebSite",
+		"name": "Myanmar Travel Guide",
+		"url": "https://davidtheimperial.github.io/myanmar-travel-guide/",
+		"inLanguage": "en",
+		"description": "An independent guide to Myanmar's culture, history and attractions."
+	}
+	</script>
 </body>
+</html>

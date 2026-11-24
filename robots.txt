@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://davidtheimperial.github.io/myanmar-travel-guide/sitemap.xml
