@@ -992,6 +992,49 @@ table td:last-child {
 	color: var(--maroon-700);
 }
 
+/* 404 easter egg */
+.egg {
+	max-width: 22rem;
+	margin: 2.25rem auto 0;
+	padding: 0.25rem 1.25rem;
+	text-align: left;
+	background: var(--surface);
+	border: 1px solid var(--line);
+	border-radius: var(--radius);
+}
+
+.egg summary {
+	padding: 0.9rem 0;
+	font-weight: 600;
+	color: var(--heading);
+	cursor: pointer;
+}
+
+.egg[open] {
+	padding-bottom: 1.25rem;
+}
+
+.egg figure {
+	margin: 0;
+	display: grid;
+	justify-items: center;
+	gap: 0.6rem;
+}
+
+.egg img {
+	width: 100%;
+	max-width: 224px;
+	height: auto;
+	border: 1px solid var(--line);
+	border-radius: var(--radius-sm);
+}
+
+.egg figcaption {
+	font-size: 0.82rem;
+	color: var(--muted);
+	text-align: center;
+}
+
 /* 8. Footer --------------------------------------------------------------- */
 
 .site-footer {
