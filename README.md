@@ -12,9 +12,12 @@ with a clear travel advisory. Plain HTML, one stylesheet, one small script.
 | `history.html` | Timeline from the Pyu city-states to the present |
 | `attractions.html` | Bagan, Inle Lake, Shwedagon, Mandalay, Ngapali, Hpa-An |
 | `disclaimer.html` | Travel advisory and disclaimer |
+| `credits.html` | Photographer and licence credits for all media |
 | `404.html` | Custom not-found page for GitHub Pages |
 | `styles.css` | All styling, including dark mode and print |
-| `app.js` | Mobile menu behaviour, footer year, active nav |
+| `app.js` | Mobile menu, footer year, active nav, ambient music toggle |
+| `assets/img/` | Photographs, with attribution in `assets/credits.json` |
+| `assets/video/` | The Bagan sunset clip shown on the attractions page |
 | `robots.txt`, `sitemap.xml` | Crawler hints |
 
 ## Run it locally
@@ -46,7 +49,9 @@ git push
   fills it in as a fallback.
 - Colours, spacing and type live as custom properties at the top of `styles.css`.
   Dark mode is a second block of the same variables under `prefers-color-scheme: dark`.
-- No external fonts, images or scripts, so the site loads fast and works offline.
+- No external fonts or scripts. Images and video are bundled in `assets/`; every file is
+  freely licensed and attributed on `credits.html`. The ambient music is synthesised with
+  the Web Audio API, so there is no audio file to download or license.
 
 ## Keeping it accurate
 

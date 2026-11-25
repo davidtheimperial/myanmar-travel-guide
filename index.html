@@ -46,43 +46,25 @@
 
 	<main id="main">
 		<section class="hero">
-			<svg class="hero-art" viewBox="0 0 600 260" aria-hidden="true" focusable="false">
-				<g fill="currentColor">
-					<rect x="75" y="238" width="60" height="22" rx="2"/>
-					<rect x="82" y="224" width="46" height="14" rx="2"/>
-					<path d="M88 224c0-38 7-52 17-52s17 14 17 52z"/>
-					<rect x="101" y="160" width="8" height="12"/>
-					<path d="M102 160 105 108l3 52z"/>
-					<circle cx="105" cy="104" r="3.5"/>
-
-					<rect x="250" y="224" width="100" height="36" rx="3"/>
-					<rect x="260" y="206" width="80" height="18" rx="2"/>
-					<path d="M266 206c0-60 14-78 34-78s34 18 34 78z"/>
-					<rect x="295" y="110" width="10" height="18"/>
-					<path d="M296 110 300 44l4 66z"/>
-					<circle cx="300" cy="40" r="4.5"/>
-
-					<rect x="430" y="234" width="80" height="26" rx="2"/>
-					<rect x="438" y="222" width="64" height="12" rx="2"/>
-					<path d="M443 222c0-46 11-62 27-62s27 16 27 62z"/>
-					<rect x="466" y="148" width="8" height="12"/>
-					<path d="M467 148 470 100l3 48z"/>
-					<circle cx="470" cy="96" r="3.5"/>
-				</g>
-			</svg>
-
 			<div class="wrap hero-inner">
-				<p class="eyebrow eyebrow--light">An independent guide</p>
-				<h1>Myanmar: culture, history and places to know</h1>
-				<p class="hero-lede">A plain-language introduction to the country — its peoples and festivals, the long sweep of its history, and the landmarks travellers ask about most. Written for readers, not for bookings.</p>
-				<div class="hero-actions">
-					<a class="btn btn-primary" href="attractions.html">Explore attractions</a>
-					<a class="btn btn-ghost" href="culture.html">Start with the culture</a>
+				<div class="hero-copy">
+					<p class="eyebrow eyebrow--light">An independent guide</p>
+					<h1>Myanmar: culture, history and places to know</h1>
+					<p class="hero-lede">A plain-language introduction to the country — its peoples and festivals, the long sweep of its history, and the landmarks travellers ask about most. Written for readers, not for bookings.</p>
+					<div class="hero-actions">
+						<a class="btn btn-primary" href="attractions.html">Explore attractions</a>
+						<a class="btn btn-ghost" href="culture.html">Start with the culture</a>
+					</div>
+					<p class="hero-note">
+						<span aria-hidden="true">&#9888;</span>
+						<span>Myanmar is in the middle of an armed conflict. Read the <a href="disclaimer.html">travel advisory</a> before planning any trip.</span>
+					</p>
 				</div>
-				<p class="hero-note">
-					<span aria-hidden="true">&#9888;</span>
-					<span>Myanmar is in the middle of an armed conflict. Read the <a href="disclaimer.html">travel advisory</a> before planning any trip.</span>
-				</p>
+
+				<figure class="hero-figure">
+					<img src="assets/img/bagan-hero.jpg" width="1600" height="899" alt="Brick stupas and temple spires spread across the Bagan plain." fetchpriority="high" decoding="async">
+					<figcaption>The temple plain at Bagan. Photo: Vyacheslav Argenberg, CC BY 4.0.</figcaption>
+				</figure>
 			</div>
 		</section>
 
@@ -195,6 +177,7 @@
 						<li><a href="history.html">History</a></li>
 						<li><a href="attractions.html">Attractions</a></li>
 						<li><a href="disclaimer.html">Travel advisory</a></li>
+						<li><a href="credits.html">Image credits</a></li>
 					</ul>
 				</nav>
 
@@ -225,5 +208,9 @@
 		"description": "An independent guide to Myanmar's culture, history and attractions."
 	}
 	</script>
+	<button class="music-toggle" type="button" data-music-toggle aria-pressed="false" aria-label="Ambient music">
+		<span class="music-toggle-bars" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+		<span class="music-toggle-label" aria-hidden="true">Music</span>
+	</button>
 </body>
 </html>
