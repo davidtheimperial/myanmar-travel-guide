@@ -9,16 +9,17 @@
 	<meta name="robots" content="noindex">
 	<meta name="theme-color" content="#fbf6ee" media="(prefers-color-scheme: light)">
 	<meta name="theme-color" content="#141110" media="(prefers-color-scheme: dark)">
-	<link rel="icon" type="image/svg+xml" href="favicon.svg">
-	<link rel="stylesheet" href="styles.css">
-	<script src="app.js" defer></script>
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="apple-touch-icon" href="/favicon.svg">
+	<link rel="stylesheet" href="/styles.css">
+	<script src="/app.js" defer></script>
 </head>
 <body>
 	<a class="skip-link" href="#main">Skip to content</a>
 
 	<header class="site-header">
 		<div class="wrap header-inner">
-			<a class="brand" href="index.html">
+			<a class="brand" href="/">
 				<span class="brand-mark" aria-hidden="true">M</span>
 				<span class="brand-text">Myanmar <em>Travel Guide</em></span>
 			</a>
@@ -29,11 +30,12 @@
 
 			<nav class="site-nav" id="site-nav" aria-label="Main">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="culture.html">Culture</a></li>
-					<li><a href="history.html">History</a></li>
-					<li><a href="attractions.html">Attractions</a></li>
-					<li><a href="disclaimer.html">Travel advisory</a></li>
+					<li><a href="/">Home</a></li>
+					<li><a href="/culture">Culture</a></li>
+					<li><a href="/history">History</a></li>
+					<li><a href="/attractions">Attractions</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/disclaimer">Travel advisory</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -46,13 +48,16 @@
 				<h1>404</h1>
 				<p class="lede">This page isn't here. It may have been renamed, or the link may have a typo in it.</p>
 				<p style="margin-top: 1.75rem;">
-					<a class="btn btn-primary" href="index.html">Back to the home page</a>
+					<a class="btn btn-primary" href="/">Back to the home page</a>
 				</p>
 
 				<details class="egg">
 					<summary>Nothing here &mdash; but there is a cat</summary>
 					<figure>
-						<img src="sus-cat.gif" width="224" height="224" alt="An animated cat giving the camera a suspicious look." loading="lazy" decoding="async">
+						<picture>
+							<source type="image/webp" srcset="/sus-cat.webp">
+							<img src="/sus-cat.gif" width="224" height="224" alt="An animated cat giving the camera a suspicious look." loading="lazy" decoding="async">
+						</picture>
 						<figcaption>sus-cat, the site's unofficial mascot.</figcaption>
 					</figure>
 				</details>
@@ -63,9 +68,9 @@
 	<footer class="site-footer">
 		<div class="wrap">
 			<div class="footer-legal" style="margin-top: 0; border-top: 0; padding-top: 0;">
-				<p>&copy; <span data-year>2026</span> Myanmar Travel Guide. Written by <a href="https://github.com/davidtheimperial" target="_blank" rel="noopener noreferrer">David Gaius</a>.</p>
-				<p>Informational only &mdash; see the <a href="disclaimer.html">travel advisory</a>.</p>
-				<p><a href="credits.html">Image credits</a></p>
+				<p>&copy; <span data-year>2026</span> Myanmar Travel Guide. Written by <a href="/about">David Gaius</a>.</p>
+				<p>Informational only &mdash; see the <a href="/disclaimer">travel advisory</a>.</p>
+				<p><a href="/credits">Image credits</a></p>
 			</div>
 		</div>
 	</footer>
