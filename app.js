@@ -55,11 +55,17 @@
 	}
 
 	/* Fallback: highlight the current page if the markup didn't say so. */
-	var file = window.location.pathname.split('/').pop() || 'index.html';
+	var normalise = function (value) {
+		return (value || '')
+			.split('#')[0]
+			.replace(/index\.html$/, '')
+			.replace(/\.html$/, '')
+			.replace(/\/+$/, '') || '/';
+	};
+	var here = normalise(window.location.pathname);
 	document.querySelectorAll('.site-nav a').forEach(function (link) {
 		if (link.hasAttribute('aria-current')) return;
-		var href = link.getAttribute('href');
-		if (href && href.split('#')[0] === file) {
+		if (normalise(link.getAttribute('href')) === here) {
 			link.setAttribute('aria-current', 'page');
 		}
 	});
